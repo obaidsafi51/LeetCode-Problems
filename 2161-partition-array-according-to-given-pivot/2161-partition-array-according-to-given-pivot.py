@@ -9,5 +9,5 @@ class Solution:
                 equal.append(num)
             else:
                 greater.append(num)
-                
-        return less+ equal+ greater
+        nums [:] = less+equal+greater
+        return nums
