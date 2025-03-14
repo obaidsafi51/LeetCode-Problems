@@ -2,7 +2,7 @@ class Solution:
     def maximumCandies(self, candies: List[int], k: int) -> int:
         if sum(candies) < k:
             return 0
-        left, right = 1, max(candies)
+        left, right = 1, sum(candies) // k
         best = 0
 
         def canDistribute(X):
