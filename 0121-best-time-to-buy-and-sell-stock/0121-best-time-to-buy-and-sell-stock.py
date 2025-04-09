@@ -1,4 +1,3 @@
-__import__("atexit").register(lambda: open("display_runtime.txt", "w").write("0"))
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
