@@ -12,7 +12,8 @@ class FindSumPairs:
         if self.freq2[ov] == 0:
             del self.freq2[ov]
         #self.nums2[index] += val
-        nv = self.nums2[index] + val
+        nv = ov + val
+        self.nums2[index] = nv 
         self.freq2[nv] += 1
 
     def count(self, tot: int) -> int:
